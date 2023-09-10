@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat Application</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="room-selection">
+        <input id="room-id" placeholder="Enter Room ID" />
+        <input id="username" placeholder="Enter Username" />
+        <button id="join-room">Join Room</button>
+    </div>
+
+    <div id="chat-window" style="display: none;">
+        <h3>Room: <span id="current-room"></span></h3>
+        <ul id="messages"></ul>
+        <form id="message-form">
+            <input id="input-message" autocomplete="off" />
+            <button>Send</button>
+        </form>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+
+</html>
