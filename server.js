@@ -80,6 +80,6 @@ function getRoomIdBySocket(socket) {
 }
 
 
-http.listen(3000, () => {
+http.listen(5500, () => {
     console.log('Server listening on port 3000');
 });

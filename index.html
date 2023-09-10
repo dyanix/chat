@@ -3,22 +3,21 @@
 
 <head>
     <title>Chat Application</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <div id="room-selection">
-        <input id="room-id" placeholder="Enter Room ID" />
-        <input id="username" placeholder="Enter Username" />
-        <button id="join-room">Join Room</button>
+    <div id="room-selection" style="text-align: center; margin-top: 50px;">
+        <input id="room-id" placeholder="Enter Room ID" style="padding: 10px; margin: 5px; border: 1px solid #ccc; border-radius: 5px;" />
+        <input id="username" placeholder="Enter Username" style="padding: 10px; margin: 5px; border: 1px solid #ccc; border-radius: 5px;" />
+        <button id="join-room" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">Join Room</button>
     </div>
 
-    <div id="chat-window" style="display: none;">
-        <h3>Room: <span id="current-room"></span></h3>
-        <ul id="messages"></ul>
-        <form id="message-form">
-            <input id="input-message" autocomplete="off" />
-            <button>Send</button>
+    <div id="chat-window" style="text-align: center; margin-top: 50px; display: none;">
+        <h3 style="font-size: 24px;">Room: <span id="current-room"></span></h3>
+        <ul id="messages" style="list-style-type: none; padding: 0; background-color: #f7f7f7; border: 1px solid #ccc; border-radius: 5px; max-height: 300px; overflow-y: auto; padding: 10px;"></ul>
+        <form id="message-form" style="margin-top: 20px;">
+            <input id="input-message" autocomplete="off" style="padding: 10px; width: 70%; border: 1px solid #ccc; border-radius: 5px;" />
+            <button style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">Send</button>
         </form>
     </div>
 
